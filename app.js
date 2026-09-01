@@ -1,5 +1,6 @@
 const express = require("express");
-const db = require("./db/db");
+const taskRoutes = require("./routes/taskRoutes");
+require("./db/db");
 
 const app = express();
 
@@ -10,6 +11,8 @@ app.get("/", (req, res) => {
         message: "TaskNest API is running"
     });
 });
+
+app.use("/v1/tasks", taskRoutes);
 
 const PORT = 3000;
 
