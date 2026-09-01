@@ -39,8 +39,6 @@ TaskNest API is a REST API for managing tasks. It was developed using Node.js, E
 
 ### Technologies
 
-## Technologies Used
-
 1. Node.js
 2. Express.js
 3. MySQL
