@@ -1,1 +1,9 @@
--- TaskNest database setup
+CREATE DATABASE IF NOT EXISTS tasknest_db;
+
+USE tasknest_db;
+
+CREATE TABLE IF NOT EXISTS tasks (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    is_completed BOOLEAN NOT NULL DEFAULT FALSE
+);
